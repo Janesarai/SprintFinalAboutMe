@@ -4,58 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#A8DCCDF8"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/presentacion2Horiz"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
-        android:text="Hello World!"
-        android:textSize="20sp"
+        android:text="Cantante y compositora con múltiples álbumes exitosos, incluyendo &quot;Thank U, Next&quot; y &quot;Positions&quot;. Gira mundial como artista principal, actuando en importantes escenarios y festivales musicales (2013-2021)."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/presentacionHorizontal" />
+        app:layout_constraintStart_toStartOf="@+id/presentacionHorizontal"
+        app:layout_constraintTop_toBottomOf="@+id/presentacionHorizontal"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/presentacionHorizontal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="30dp"
-        android:text="Hello World!"
-        android:textSize="20sp"
+        android:background="#F8F2C2"
+        android:text="Soy Ariana Grande, una famosa cantante y actriz conocida por mi talento vocal y éxitos en el pop y RYB"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imagen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257" />
 
     <Button
         android:id="@+id/buttonCompartir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:backgroundTint="#673AB7"
+        android:text="Acerca de mi"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/presentacion2Horiz" />
+        app:layout_constraintTop_toBottomOf="@+id/presentacion2Horiz"
+        app:layout_constraintVertical_bias="0.485" />
 
     <ImageView
-        android:id="@+id/foto"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/imagen"
+        android:layout_width="208dp"
+        android:layout_height="269dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/presentacionHorizontal"
+        android:contentDescription="Imagen de Ariana Grande"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352"
         tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

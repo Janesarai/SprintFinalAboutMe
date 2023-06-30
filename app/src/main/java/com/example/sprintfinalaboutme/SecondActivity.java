@@ -21,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
         binding.linkedin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent alinkedin = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/gencina2/"));
+                Intent alinkedin = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/company/ariana-buteragrande/"));
                 startActivity(alinkedin);
             }
         });
@@ -29,8 +29,11 @@ public class SecondActivity extends AppCompatActivity {
         binding.wasap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent aWasap = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=+5693527771"));
-                startActivity(aWasap);
+                String numeroTelefono = "+56977777777";
+
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + numeroTelefono));
+                startActivity(intent);
             }
         });
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#A8DCCDF8"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,14 +13,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Hello World!"
-        android:textSize="25sp"
+        android:background="#F8F2C2"
+        android:text="Soy Ariana Grande, una famosa cantante y actriz conocida por mi talento vocal y éxitos en el pop y RYB"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.67" />
+        app:layout_constraintVertical_bias="0.559" />
 
     <Button
         android:id="@+id/buttonCompartir"
@@ -28,7 +32,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Compartir"
+        android:backgroundTint="#673AB7"
+        android:text="Acerca de mi"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -37,13 +43,14 @@
         app:layout_constraintVertical_bias="0.157" />
 
     <ImageView
-        android:id="@+id/foto"
+        android:id="@+id/imagen"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:contentDescription="Imagen de Ariana Grande"
         app:layout_constraintBottom_toTopOf="@+id/presentacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,8 +64,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="TextView"
-        android:textSize="25sp"
+        android:text='Cantante y compositora con múltiples álbumes exitosos, incluyendo "Thank U, Next" y "Positions". Gira mundial como artista principal, actuando en importantes escenarios y festivales musicales (2013-2021).'
+        android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/presentacion" />
