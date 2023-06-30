@@ -29,7 +29,7 @@ public class SecondActivity extends AppCompatActivity {
         binding.wasap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent aWasap = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.whatsapp.com/?lang=es"));
+                Intent aWasap = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=+5693527771"));
                 startActivity(aWasap);
             }
         });
@@ -37,8 +37,20 @@ public class SecondActivity extends AppCompatActivity {
         binding.correo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent aCorreo = new Intent(Intent.ACTION_VIEW, Uri.parse("https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser"));
-                startActivity(aCorreo);
+                String[] TO = {"hellouhellouhi123@gmail.com"};
+                String[] CC = {""};
+                Intent emailIntent = new Intent(Intent.ACTION_SEND);
+
+                emailIntent.setData(Uri.parse("mailto:"));
+                emailIntent.setType("text/plain");
+                emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
+                emailIntent.putExtra(Intent.EXTRA_CC, CC);
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Prueba Final");
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "Escribe tu correo aquí");
+
+                startActivity(Intent.createChooser(emailIntent, "Enviando email ..."));
+                finish();
+
             }
         });
     }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C4F8EE"
     tools:context=".SecondActivity">
 
     <Button
@@ -13,7 +14,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
+        android:backgroundTint="#3A0243"
+        android:drawableLeft="@drawable/linkedin"
         android:text="Linkedin"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cabecera2" />
@@ -25,7 +29,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
+        android:backgroundTint="#3A0243"
+        android:drawableLeft="@drawable/whatsapp_black_logo_icon_147050"
         android:text="Whatsapp"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linkedin" />
@@ -37,7 +44,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
+        android:backgroundTint="#3A0243"
+        android:drawableLeft="@drawable/baseline_email_24"
         android:text="Email"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wasap" />
@@ -45,10 +55,11 @@
     <TextView
         android:id="@+id/cabecera2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="92dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Acerca de mi:"
+        android:text="    Puedes encontrarme en los siguientes enlaces:"
+        android:textColor="#673AB7"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
